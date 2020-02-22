@@ -27,8 +27,9 @@ curl --location --request POST 'http://localhost:8000/v1/sum' \
 ```
 
 ### How to throw a celery worker
-
+```bash
  celery -A path_to_application worker --pool=pool_type --concurrency=num_threads -l log_level
+```
  - path_to_application: if you are positioned on the folder where celery object is declared, only write file.celery (with file the file.py).
    Otherwise, its better to execute a command like ./folder1/folder2/.../foldern/file.celery, but it usually doesn't work.
  - pool_type: there are a lot of celery pools, but the most compatible in all operating systems and linux distributions is gevent.
