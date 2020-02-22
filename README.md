@@ -13,7 +13,7 @@ python run.py
 ```
 Then you run the celery workers (explained in next sections) and proceed to use the api.
  
- ###How to test the application
+ ### How to test the application
  You can find a file called test.postma_collection with the tests of the endpoints, but there are some examples.
 ```bash
 # GET /v1/sum
@@ -26,7 +26,7 @@ curl --location --request POST 'http://localhost:8000/v1/sum' \
 --form 'num2=2'
 ```
 
-### How to throw a celery worker
+### How to run a celery worker
 ```bash
  celery -A path_to_application worker --pool=pool_type --concurrency=num_threads -l log_level
 ```
