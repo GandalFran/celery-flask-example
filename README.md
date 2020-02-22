@@ -1,4 +1,4 @@
-celery-flask-example
+# celery-flask-example
 
 ### How to install and run
 You need to install a celery broker/backend (like rabbitmq) to proceed:
