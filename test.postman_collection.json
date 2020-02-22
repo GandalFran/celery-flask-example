@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "e1d1d177-be37-432b-b682-75edfa255ce8",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sumget",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/v1/sum?num1=1&num2=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"sum"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "1"
+						},
+						{
+							"key": "num2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumpost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "num1",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "num2",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/v1/sum?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"sum"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
