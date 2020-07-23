@@ -1,5 +1,7 @@
 # celery-flask-example
 
+Template for Python3 Flask and Celery projects.
+
 ### How to install and run
 You need to install a celery broker/backend (like rabbitmq) to proceed:
 ```bash
